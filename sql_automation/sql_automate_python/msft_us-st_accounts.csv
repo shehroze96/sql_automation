@@ -1,0 +1,15 @@
+Region,Country,Retailer,Account ID,Advisor ID,Schema
+,US,Microsoft,862,,st_us_862_8187de6d26a718dc09217dde3491e4fb
+APAC,Malaysia,Harvey Norman,,11101,
+APAC,Singapore,Harvey Norman,,10156,
+APAC,Australia,Joyce Mayne,,10850,
+APAC,Domayne,Domayne,,10920,
+LATAM,Mexico,CyberPuerta,,10999,
+EMEA,France,FNAC,,8932,
+NA,US,Newegg,,9903,
+NA,Canada,Staples,,10040,
+EMEA,Germany,Amazon,,9011,
+EMEA,Italy,Amazon,,9944,
+EMEA,France,Amazon,,10831,
+EMEA,UK,Amazon,,10027,
+EMEA,Italy,Unieuro,,10929,

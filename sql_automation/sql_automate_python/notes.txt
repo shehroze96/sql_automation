@@ -1,0 +1,76 @@
+python 
+https://www.geeksforgeeks.org/args-kwargs-python/
+
+*args and **kwargs in Python
+
+Special Symbols Used for passing arguments:-
+
+    *args (Non-Keyword Arguments)
+    **kwargs (Keyword Arguments)
+	
+
+
+
+What is Python *args ?
+
+- symbol * takes in a variable num of arguments along with the word args 
+- example could be to create a function that lists every value you pass as arguments - take the list of arguments and use a for loop to go through them
+
+	def myFun(*argv):
+		for arg in argv:
+			print(arg)
+	 
+	# usage: 
+	myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
+	
+	output:
+		Hello
+		Welcome
+		to
+		GeeksforGeeks
+
+
+- another example is to create a function that multiplies every number that you pass as argument
+- Using the *, the variable that we associate with the * becomes an iterable 
+
+
+
+
+
+What is Python **kwargs
+
+- The special syntax **kwargs in function definitions in python is used to pass a keyworded, variable-length argument list. We use the name kwargs with the double star. The reason is that the double star allows us to pass through keyword arguments (and any number of them).
+- A keyword argument is where you provide a name to the variable as you pass it into the function.
+- One can think of the kwargs as being a dictionary that maps each keyword to the value that we pass alongside it. That is why when we iterate over the kwargs there doesn’t seem to be any order in which they were printed out.
+	
+	def myFun(**kwargs):
+    for key, value in kwargs.items():
+        print("%s == %s" % (key, value))
+ 
+ 
+	# Driver code
+	# usage: 
+	myFun(first='Geeks', mid='for', last='Geeks')
+	
+	Output:
+	
+	first == Geeks
+	mid == for
+	last == Geeks
+	
+- **kwargs for a variable number of keyword arguments with one extra argument
+
+	def myFun(arg1, **kwargs):
+    for key, value in kwargs.items():
+        print("%s == %s" % (key, value))
+ 
+ 
+	# Driver code
+	myFun("Hi", first='Geeks', mid='for', last='Geeks')
+	
+	Output:
+
+	first == Geeks
+	mid == for
+	last == Geeks
+	
