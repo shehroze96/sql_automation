@@ -38,19 +38,6 @@ def create_conn_postgre(*args, **kwargs):
     except Exception as err:
         print(err)
 
-# conn = create_conn(host='prod-tracking.cjk1id3qusgl.eu-west-1.redshift.amazonaws.com', port=5439, user='skhan', password='q%td!#t<KaspW}L82(', database='prod')
-
-# azure
-# jdbc:postgresql://barracuda-klipfolio-postgres.postgres.database.azure.com:5432/reporting_prod
-# user: skhan@barracuda-klipfolio-postgres
-# pw: r6EM!QvrfFR15BXYU-21
-
-# conn = create_conn(host='barracuda-klipfolio-postgres.postgres.database.azure.com', port=5432, user='skhan@barracuda-klipfolio-postgres', password='r6EM!QvrfFR15BXYU-21', database='reporting_prod')
-# connection = create_conn(host='prod-tracking.cjk1id3qusgl.eu-west-1.redshift.amazonaws.com', port=5439, user='skhan', password='q%td!#t<KaspW}L82(', database='prod')
-# print("testing")
-# connection.close()
-
-#print(create_conn_redshift(host='prod-tracking.cjk1id3qusgl.eu-west-1.redshift.amazonaws.com', port=5439, user='skhan', password='q%td!#t<KaspW}L82(', database='prod'))
 
 
 def schema_name_query(env: str, account_id: str, dog: str) -> str:
@@ -316,21 +303,6 @@ def compare_csv_files():
     return None
 
 
-# conn_barracuda = create_conn_postgre(host='barracuda-klipfolio-postgres.postgres.database.azure.com', 
-#                             port=5432, 
-#                             user='skhan@barracuda-klipfolio-postgres', 
-#                             password='r6EM!QvrfFR15BXYU-21', 
-#                             database='reporting_prod')
-
-# conn_tiger_st = create_conn_redshift(host='prod-tracking.cjk1id3qusgl.eu-west-1.redshift.amazonaws.com',
-#                             port=5439,
-#                             database='prod',
-#                             user='skhan',
-#                             password='q%td!#t<KaspW}L82(')
-
-# queries_dict = form_queries(filepath='msft_us-st_accounts.csv',start='2022-08-01', end='2022-08-31')
-
-# print(queries_dict)
 
 
 
