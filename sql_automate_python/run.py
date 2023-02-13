@@ -27,7 +27,7 @@ def run():
 
         print('now we close the connection')
         conn_aurora.close()
-
+ 
     elif db_name.strip().lower() == 'az':
         print('You have chosen Azure, fetching the credentials and connecting to DB...')
         azure_credentials = db_helpers.fetch_credentials('./credentials/azure_credentials.csv')
