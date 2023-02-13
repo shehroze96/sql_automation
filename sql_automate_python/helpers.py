@@ -151,7 +151,7 @@ def us_st_msft_reports_query():
 # print(msft_reports_query(schema='SHALALALLALALALALALALLALALAH', start_date= '2021-08-01', end_date= '2021-08-31', advisor_id= '2234'))
 
 
-# region = None # 0
+# regionn = None # 0
 # country = None # 1
 # retailer = None # 2
 # account_id = None # 3
@@ -174,6 +174,10 @@ def form_queries(filepath, start, end):
                 line_count +=1 
             else:
                 # print(row)
+                if row[1] != '':
+                    country = row[1]
+                else:
+                    country = ''
                 retailer = row[2]
                 country = row[1]
                 file_name = f"{retailer} {country}"
