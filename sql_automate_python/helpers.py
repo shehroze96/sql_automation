@@ -210,6 +210,7 @@ def form_queries(filepath, start, end):
 # how to create a folder https://www.geeksforgeeks.org/create-a-directory-in-python/
 
 def five_second_delay():
+    print('delays')
     sleep(5)
 
 def fifteen_second_delay():
