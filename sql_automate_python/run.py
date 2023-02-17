@@ -17,7 +17,7 @@ def run():
         start_date = input('Enter the start date in the following format YYYY-MM-DD: \n')
         end_date = input('Enter the end date in the following format YYYY-MM-DD: \n')
         file_name = input('Enter the file name that contains schema and assistant details (for example "msft_tiger_accounts.csv or msft_us-st_accounts.csv"): \n')
-        server_name  = input('Enter the server (ST, ORCA, TIGER, BARRACUDA ETC.) and the year: ')
+        server_name  = input('Enter the server (ST, ORCA, TIGER, BARRACUDA ETC.) and the year:\n ')
         month_as_string = input('Enter the month you\'re querying as a string\n')
 
 
